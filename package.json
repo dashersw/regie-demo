@@ -1,0 +1,22 @@
+{
+  "name": "regie-demo",
+  "version": "1.0.0",
+  "description": "A demo application for the regie library",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "regie": "^3.0.0-alpha.1"
+  }
+}
