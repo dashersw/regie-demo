@@ -1,6 +1,12 @@
 import regie from 'regie'
 import on from '../../lib/on'
 
+type DateState = {
+  date: number
+  month: number
+  year: number
+}
+
 const { observe, state } = regie({
   initialState: {
     date: {
@@ -24,5 +30,5 @@ observe('date', date => {
 })
 
 on<HTMLInputElement>('input[type=number]', 'input', function () {
-  state.date[this.dataset.id] = +this.value
+  state.date[this.dataset.id as keyof DateState] = +this.value
 })
